@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif !important;
+}
+
+.header {
+	height: 85vh;
+	background-image: linear-gradient(to bottom, #b8ffab88, #239e75e8),
+		url('assets/img/house-2.jpeg');
+	background-size: cover;
+	background-position: center;
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	position: relative;
+}
+
+.text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -40%);
+	text-align: center;
+}
+
+.heading-main {
+	display: block;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 35px;
+	animation: moveInLeft 1.5s ease-out;
+}
+
+.heading-sub {
+	display: block;
+	font-size: 1em;
+	font-weight: 700;
+	letter-spacing: 17.4px;
+	animation: moveInRight 1.5s ease-out;
+	margin-bottom: 60px;
+}
+
+#btn-browse-listings {
+	animation: moveInBottom 1.5s ease-out;
+}
+
+.advantages {
+	margin-top: 20vh;
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-150px);
+	}
+
+	80% {
+		transform: translateX(15px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(150px);
+	}
+
+	80% {
+		transform: translateX(-15px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
