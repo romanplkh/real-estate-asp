@@ -4,15 +4,8 @@ body {
 	font-family: 'Lato', sans-serif !important;
 	background-image: url('./assets/patterns/dust_scratches.png');
 	background-repeat: repeat;
-}
-
-.header {
-	/* height: 85vh; */
-	background-image: linear-gradient(to bottom, #b8ffab88, #239e75e8);
-	background-size: cover;
-	background-position: center;
-	/* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-	position: relative;  */
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .header-main {
@@ -28,20 +21,11 @@ body {
 }
 
 .heading-main {
-	display: block;
-	font-size: 2.2em;
-	font-weight: 700;
-	letter-spacing: 35px;
 	animation: moveInLeft 1.5s ease-out;
 }
 
 .heading-sub {
-	display: block;
-	font-size: 1.1em;
-	font-weight: 700;
-	letter-spacing: 17.4px;
 	animation: moveInRight 1.5s ease-out;
-	margin-bottom: 60px;
 }
 
 #btn-browse-listings {
@@ -50,10 +34,12 @@ body {
 
 .advantages {
 	background-image: linear-gradient(to bottom, #ffffff44, #0d5e4346);
+	box-shadow: 0 2px 2px 2px #0d5e4346;
 }
 
 .icon-card {
-	font-size: 3.5rem;
+	font-size: 3em;
+	border-radius: 100%;
 }
 
 .card-hover {
@@ -86,19 +72,13 @@ body {
 	background-color: #95b0b4;
 }
 
-.partners {
-	height: 10vh;
-	position: relative;
-}
-
 .col img {
-	max-height: 2.5rem;
+	max-height: 2rem;
 	max-width: 100%;
 	filter: brightness(100%);
 }
 
 .footer-main {
-	clip-path: polygon(50% 21%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
 	height: 50vh;
 	margin-top: -6%;
 }
