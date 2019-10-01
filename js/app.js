@@ -1,6 +1,5 @@
 $(document).ready(function() {
 	if ($('.owl-carousel').length > 0) {
-		$('.owl-carousel').owlCarousel();
 		$('.owl-carousel').owlCarousel({
 			loop: true,
 			margin: 20,
