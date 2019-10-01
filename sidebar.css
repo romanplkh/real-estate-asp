@@ -139,3 +139,10 @@ a.article:hover {
 	min-height: 100vh;
 	transition: all 0.3s;
 }
+
+
+@media(max-width: 756px){
+	.wrapper{
+		display: none;
+	}
+}
