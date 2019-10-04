@@ -12420,7 +12420,7 @@ a.text-deep-green:focus {
   text-align: left;
 }
 
-#sidebar.active ul li a {
+#sidebar.active  ul li a {
   padding: 20px 10px;
   text-align: center;
   font-size: 0.85em;
@@ -12478,7 +12478,7 @@ a.text-deep-green:focus {
 }
 
 #sidebar ul li.active > a,
-a[aria-expanded='true'] {
+#sidebar a[aria-expanded='true'] {
   color: #fff;
   background: #324b4e;
 }
