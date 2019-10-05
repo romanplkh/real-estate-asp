@@ -9,8 +9,11 @@ namespace Horizon.Models
     public class HorizonContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Authentication> Auths { get; set; }
+        public DbSet<Country> Countries { get; set; }
+        public DbSet<Province> Provinces { get; set; }
+
+       // public DbSet<Customer> Customers { get; set; }
+       // public DbSet<Authentication> Auths { get; set; }
 
     }
 }
