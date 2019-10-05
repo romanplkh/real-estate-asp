@@ -5,8 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Document</title>
-		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="sidebar.css" />
+		<link rel="stylesheet" href="src/bundle.css" />
 		<link href="fonts/webfonts/all.css" rel="stylesheet" />
 	</head>
 
@@ -123,59 +122,129 @@
 					</li>
 				</ul>
 			</nav>
-		</div>
 
-		<!-- !NAVBAR   -->
-		<div class="container-fluid p-0">
-			<nav class="navbar d-md-none d-block navbar-light bg-light ">
-				<div class="container-fluid mr-5">
-					<a href="#" class="nav-brand">
-						<img
-							src="src/assets/img/horizon_logo_header_2.svg"
-							width="100"
-							height="40"
-							alt=""
-						/>
-					</a>
-					<button
-						class="navbar-toggler"
-						data-toggle="collapse"
-						data-target="#navbarCollapse"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarCollapse">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item mt-4">
-								<span class="font-weight-bold">broker@horizon.ca</span>
-							</li>
-							<hr />
-							<li class="nav-item">
-								<a href="#" class="nav-link text-dark font-weight-bold"
-									>Add Agent</a
-								>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link text-dark font-weight-bold"
-									>Add Customer</a
-								>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link text-dark font-weight-bold"
-									>Add Listing</a
-								>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link text-dark font-weight-bold"
-									>Sign out</a
-								>
-							</li>
-						</ul>
+			<!-- !NAVBAR   -->
+			<div class="container-fluid p-0">
+				<nav class="navbar d-block d-md-none navbar-light bg-light ">
+					<div class="container-fluid mr-5">
+						<a href="#" class="nav-brand">
+							<img
+								src="src/assets/img/horizon_logo_header_2.svg"
+								width="100"
+								height="40"
+								alt=""
+							/>
+						</a>
+						<button
+							class="navbar-toggler"
+							data-toggle="collapse"
+							data-target="#navbarCollapse"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarCollapse">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item mt-4">
+									<span class="font-weight-bold">broker@horizon.ca</span>
+								</li>
+								<hr />
+								<li class="nav-item">
+									<a href="#" class="nav-link text-dark font-weight-bold"
+										>Add Agent</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link text-dark font-weight-bold"
+										>Add Customer</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link text-dark font-weight-bold"
+										>Add Listing</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link text-dark font-weight-bold"
+										>Sign out</a
+									>
+								</li>
+							</ul>
+						</div>
 					</div>
+				</nav>
+
+					<form>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEmail4">Email</label>
+					<input
+						type="email"
+						class="form-control"
+						id="inputEmail4"
+						placeholder="Email"
+					/>
 				</div>
-			</nav>
+				<div class="form-group col-md-6">
+					<label for="inputPassword4">Password</label>
+					<input
+						type="password"
+						class="form-control"
+						id="inputPassword4"
+						placeholder="Password"
+					/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress">Address</label>
+				<input
+					type="text"
+					class="form-control"
+					id="inputAddress"
+					placeholder="1234 Main St"
+				/>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress2">Address 2</label>
+				<input
+					type="text"
+					class="form-control"
+					id="inputAddress2"
+					placeholder="Apartment, studio, or floor"
+				/>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputCity">City</label>
+					<input type="text" class="form-control" id="inputCity" />
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputState">State</label>
+					<select id="inputState" class="form-control">
+						<option selected>Choose...</option>
+						<option>...</option>
+					</select>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputZip">Zip</label>
+					<input type="text" class="form-control" id="inputZip" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck" />
+					<label class="form-check-label" for="gridCheck">
+						Check me out
+					</label>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Sign in</button>
+		</form>
+			</div>
+			
+
 		</div>
 
+	
 		<script src="src/js/jquery.min.js"></script>
 		<script src="src/js/popper.min.js"></script>
 		<script src="src/js/bootstrap.min.js"></script>
