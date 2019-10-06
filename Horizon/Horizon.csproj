@@ -193,6 +193,10 @@
     <Compile Include="Migrations\201910060235044_AddValidationModel.Designer.cs">
       <DependentUpon>201910060235044_AddValidationModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910061742029_AddNewModelValidation.cs" />
+    <Compile Include="Migrations\201910061742029_AddNewModelValidation.Designer.cs">
+      <DependentUpon>201910061742029_AddNewModelValidation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccessLevel.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -365,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910060235044_AddValidationModel.resx">
       <DependentUpon>201910060235044_AddValidationModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910061742029_AddNewModelValidation.resx">
+      <DependentUpon>201910061742029_AddNewModelValidation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

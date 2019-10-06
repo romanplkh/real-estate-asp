@@ -40,8 +40,9 @@ namespace Horizon.Models
       [StringLength(100, MinimumLength = 3)]
       public string StreetAddress { get; set; }
 
-      [StringLength(50, MinimumLength = 3)]
+
       [Required(ErrorMessage = "City is required")]
+      [StringLength(50, MinimumLength = 3)]
       public string City { get; set; }
 
       [Required(ErrorMessage = "Postal code is required")]
@@ -50,34 +51,46 @@ namespace Horizon.Models
       [RegularExpression(@"^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z]\d[ABCEGHJ-NPRSTV-Z]\d$", ErrorMessage = "Postal code has incorrect format")]
       public string PostalCode { get; set; }
 
-
+      [Required(ErrorMessage = "Home phone is required")]
       [StringLength(14)]
       [RegularExpression(@"^[(]\d{3}[)][\s]\d{3}[-]\d{4}$", ErrorMessage = "Phone has a wrong format.Format should be (XXX) XXX-XXXX")]
+      [Display(Name = "Home Phone")]
       public string HomePhone  { get; set; }
 
+      [Required(ErrorMessage = "Cell phone is required")]
       [StringLength(14)]
       [RegularExpression(@"^[(]\d{3}[)][\s]\d{3}[-]\d{4}$", ErrorMessage = "Phone has a wrong format.Format should be (XXX) XXX-XXXX")]
+      [Display(Name = "Cell Phone")]
       public string CellPhone { get; set; }
       
+      [Required(ErrorMessage = "Office phone is required")]
       [StringLength(14)]
       [RegularExpression(@"^[(]\d{3}[)][\s]\d{3}[-]\d{4}$", ErrorMessage = "Phone has a wrong format.Format should be (XXX) XXX-XXXX")]
+      [Display(Name = "Office Phone")]
       public string OfficePhone { get; set; }
 
+      [Required(ErrorMessage = "Office email is required")]
       [StringLength(50, MinimumLength = 3)]
       [EmailAddress]
+      [Display(Name = "Office email")]
       public string OfficeEmail { get; set; }
 
+      [Required(ErrorMessage = "Date of birth is required")]
       [DataType(DataType.Date)]
       [CustomAttribute.AgeIsValid]
+      [Display(Name = "Date of birth")]
       public DateTime DOB { get; set; }
 
    
-      [Required]
+      [Required(ErrorMessage = "Reference added by is required")]
       [IntegerValidator]
+      [Display(Name = "Employee added by")]
       public int AddedBy { get; set; }
 
+      [Required(ErrorMessage = "Hire date is required")]
       [DataType(DataType.Date)]
       [CustomAttribute.HireDateIsValid]
+      [Display(Name = "Hire date")]
       public DateTime HireDate { get; set; }
 
 

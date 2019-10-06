@@ -12,7 +12,10 @@ namespace Horizon.Models
       {
          protected override ValidationResult IsValid( object value, ValidationContext validationContext )
          {
-            if (DateTime.Parse(value.ToString()).AddYears(18) <= DateTime.Now)
+
+            DateTime date = (DateTime) value;
+
+            if (date.AddYears(18) > DateTime.Now)
             {
                return ValidationResult.Success;
             }
