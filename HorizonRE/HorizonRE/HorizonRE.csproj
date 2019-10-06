@@ -167,6 +167,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -181,10 +182,15 @@
     <Compile Include="Migrations\201910061955276_WithoutCountryProvince.Designer.cs">
       <DependentUpon>201910061955276_WithoutCountryProvince.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910062141197_CustomerTable.cs" />
+    <Compile Include="Migrations\201910062141197_CustomerTable.Designer.cs">
+      <DependentUpon>201910062141197_CustomerTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\CustomAttribute.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\HorizonContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -337,6 +343,8 @@
     <Content Include="Views\Shared\_Admin.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Add.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\AddCustomer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -356,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910061955276_WithoutCountryProvince.resx">
       <DependentUpon>201910061955276_WithoutCountryProvince.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910062141197_CustomerTable.resx">
+      <DependentUpon>201910062141197_CustomerTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
